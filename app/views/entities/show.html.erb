@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Project:</strong>
+  <%= @entity.project %>
+</p>
+
+<p>
+  <strong>Code name:</strong>
+  <%= @entity.code_name %>
+</p>
+
+<p>
+  <strong>Label:</strong>
+  <%= @entity.label %>
+</p>
+
+<p>
+  <strong>Layout hint:</strong>
+  <%= @entity.layout_hint %>
+</p>
+
+<p>
+  <strong>Field:</strong>
+  <%= @entity.field %>
+</p>
+
+<%= link_to 'Edit', edit_entity_path(@entity) %> |
+<%= link_to 'Back', entities_path %>

@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :entities
+
   resources :fields
 
   devise_for :users, controllers: {registrations: "users/registrations", sessions: "users/sessions", passwords: "users/passwords"}, skip: [:sessions, :registrations]
