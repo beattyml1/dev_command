@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :projects
+
   resources :entities
 
   resources :fields
