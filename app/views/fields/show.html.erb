@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Code name:</strong>
+  <%= @field.code_name %>
+</p>
+
+<p>
+  <strong>Label:</strong>
+  <%= @field.label %>
+</p>
+
+<p>
+  <strong>Entity:</strong>
+  <%= @field.entity %>
+</p>
+
+<p>
+  <strong>Field type:</strong>
+  <%= @field.field_type %>
+</p>
+
+<p>
+  <strong>Required:</strong>
+  <%= @field.required %>
+</p>
+
+<p>
+  <strong>Min:</strong>
+  <%= @field.min %>
+</p>
+
+<p>
+  <strong>Max:</strong>
+  <%= @field.max %>
+</p>
+
+<p>
+  <strong>Ui hint:</strong>
+  <%= @field.ui_hint %>
+</p>
+
+<%= link_to 'Edit', edit_field_path(@field) %> |
+<%= link_to 'Back', fields_path %>

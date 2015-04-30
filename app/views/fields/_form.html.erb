@@ -1,0 +1,18 @@
+<%= simple_form_for(@field) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :code_name %>
+    <%= f.input :label %>
+    <%= f.association :entity %>
+    <%= f.input :field_type %>
+    <%= f.input :required %>
+    <%= f.input :min %>
+    <%= f.input :max %>
+    <%= f.input :ui_hint %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
